@@ -1,0 +1,5 @@
+.wrap {
+  margin-top: auto;
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+}

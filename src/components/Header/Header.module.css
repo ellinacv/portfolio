@@ -1,0 +1,6 @@
+/* Header */
+
+.wrap {
+  background-color: var(--purple);
+  color: var(--white);
+}
