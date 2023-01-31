@@ -1,6 +1,6 @@
 # My portfolio
 
-[Watch live](https://ellinacv.github.io/portfolio).
+[Watch live](https://ellinacv.github.io/portfolio)
 
 ## Technologies
 
