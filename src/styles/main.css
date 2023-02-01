@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap'); */
 @import './reset.css';
 
 :root {
@@ -52,16 +52,18 @@ html {
 
 html,
 body {
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
 
-  font-family: 'Inconsolata', monospace, Helvetica, sans-serif;
-
-  /* Light mode */
   background-color: var(--page-bg);
+  font-family: 'Inconsolata', monospace, Helvetica, sans-serif;
   color: var(--text-color);
   letter-spacing: -0.5px;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* General */
@@ -77,6 +79,7 @@ body {
 }
 
 .section {
+  margin: auto 0;
   padding: 70px 0;
 }
 
@@ -194,8 +197,6 @@ body {
   top: 1px;
 }
 
-/* Content list */
-
 .content-list {
   margin: 0 auto;
   max-width: 570px;
@@ -239,8 +240,6 @@ body {
     margin-bottom: 10px;
     font-size: 30px;
   }
-
-  /* Content List */
 
   .content-list {
     row-gap: 20px;

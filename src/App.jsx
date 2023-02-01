@@ -1,35 +1,16 @@
 import { Navbar } from './components/Navbar/Navbar';
-import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
+import { Home } from './pages/Home/Home';
+import { Projects } from './pages/Projects/Projects';
+import { Contacts } from './pages/Contacts/Contacts';
 
 export const App = () => {
   return (
     <>
       <Navbar />
-      <Header />
-
-      <main class="section">
-        <div class="container">
-          <ul id="skills" class="content-list">
-            <li class="content-list__item">
-              <h2 class="title-2">Frontend</h2>
-              <p>
-                HTML, CSS, SCSS, JavaScript, ReactJS, Redux, NPM, Yarn,
-                Bootstrap, TailwindCSS, StyledComponents
-              </p>
-            </li>
-            <li class="content-list__item">
-              <h2 class="title-2">CMS</h2>
-              <p>Tilda, Wordpess, Opencart</p>
-            </li>
-            <li class="content-list__item">
-              <h2 class="title-2">Tools</h2>
-              <p>Figma, Adobe Photoshop, GitHub, GitLab, Jira</p>
-            </li>
-          </ul>
-        </div>
-      </main>
-
+      <Home />
+      <Projects />
+      <Contacts />
       <Footer />
     </>
   );
