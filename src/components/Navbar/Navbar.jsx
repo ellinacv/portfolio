@@ -1,18 +1,23 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
 import sun from '../../img/icons/sun.svg';
 import moon from '../../img/icons/moon.svg';
+
+const getActiveClassName = ({ isActive }) =>
+  isActive
+    ? `${styles.list__link} ${styles.list__link_active}`
+    : styles.list__link;
 
 export const Navbar = () => {
   return (
     <nav className={styles.content}>
       <div className="container">
         <div className={styles.row}>
-          <a href="/" className={styles.logo}>
+          <NavLink to="/" className={styles.logo}>
             <strong>{'{ellinacv}'}</strong>
-          </a>
-
+          </NavLink>
           <button className="dark-mode-btn">
             <img src={sun} alt="Light mode" className="dark-mode-btn__icon" />
             <img src={moon} alt="Dark mode" className="dark-mode-btn__icon" />
@@ -20,22 +25,19 @@ export const Navbar = () => {
 
           <ul className={styles.list}>
             <li className={styles.list__item}>
-              <a
-                href="#skills"
-                className={`${styles.list__link} ${styles.list__link__active}`}
-              >
+              <a href="/#skills" className={styles.list__link}>
                 Skills
               </a>
             </li>
             <li className={styles.list__item}>
-              <a href="#projects" className={styles.list__link}>
+              <NavLink to="/projects" className={getActiveClassName}>
                 Projects
-              </a>
+              </NavLink>
             </li>
             <li className={styles.list__item}>
-              <a href="#contacts" className={styles.list__link}>
+              <NavLink to="/contacts" className={getActiveClassName}>
                 Contacts
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>

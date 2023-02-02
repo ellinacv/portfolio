@@ -33,7 +33,6 @@
   column-gap: 40px;
   font-size: 16px;
   font-weight: 500;
-  /* font-family: 'Poppins', sans-serif; */
 }
 
 .list__link {
@@ -45,11 +44,11 @@
   opacity: 0.8;
 }
 
-.list__link--active {
+.list__link_active {
   position: relative;
 }
 
-.list__link--active::before {
+.list__link_active::before {
   content: '';
 
   position: absolute;
@@ -59,7 +58,7 @@
   display: block;
   height: 2px;
   width: 100%;
-  background-color: var(--accent);
+  background-color: var(--white);
 }
 
 @media (max-width: 620px) {
