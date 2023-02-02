@@ -25,11 +25,6 @@ export const Navbar = () => {
 
           <ul className={styles.list}>
             <li className={styles.list__item}>
-              <a href="/#skills" className={styles.list__link}>
-                Skills
-              </a>
-            </li>
-            <li className={styles.list__item}>
               <NavLink to="/projects" className={getActiveClassName}>
                 Projects
               </NavLink>
