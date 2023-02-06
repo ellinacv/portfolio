@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect, useRef } from 'react';
-import detectDarkMode from '../utils/detectDarkMode';
+import { detectDarkMode } from '../utils/detectDarkMode';
 import { SunIcon } from './svgBtn/SunIcon';
 import { MoonIcon } from './svgBtn/MoonIcon';
 import styles from './BtnDarkMode.module.css';
@@ -18,6 +18,15 @@ export const BtnDarkMode = () => {
       btnRef.current.classList.remove(styles.btn_active);
     }
   }, [darkMode]);
+
+  useEffect(() => {
+    window
+      .matchMedia('(prefers-color-scheme: dark)')
+      .addEventListener('change', (event) => {
+        const newColorScheme = event.matches ? 'dark' : 'light';
+        setDarkMode(newColorScheme);
+      });
+  });
 
   const toggleDarkMode = () => {
     setDarkMode((currentValue) => {
