@@ -1,9 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { BtnDarkMode } from '../BtnDarkMode/BtnDarkMode';
 import styles from './Navbar.module.css';
-
-import sun from '../../img/icons/sun.svg';
-import moon from '../../img/icons/moon.svg';
 
 const getActiveClassName = ({ isActive }) =>
   isActive
@@ -18,11 +16,7 @@ export const Navbar = () => {
           <NavLink to="/" className={styles.logo}>
             <strong>{'{ellinacv}'}</strong>
           </NavLink>
-          <button className="dark-mode-btn">
-            <img src={sun} alt="Light mode" className="dark-mode-btn__icon" />
-            <img src={moon} alt="Dark mode" className="dark-mode-btn__icon" />
-          </button>
-
+          <BtnDarkMode />
           <ul className={styles.list}>
             <li className={styles.list__item}>
               <NavLink to="/projects" className={getActiveClassName}>

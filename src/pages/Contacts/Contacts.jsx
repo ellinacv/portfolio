@@ -14,17 +14,11 @@ export const Contacts = () => {
           </li>
           <li className={styles.list__item}>
             <h2 className="title-2">Telegram</h2>
-            <p>
-              <a href="https://t.me/ellinacv">💬 @ellinacv</a>
-            </p>
+            <a href="https://t.me/ellinacv">💬 @ellinacv</a>
           </li>
           <li className={styles.list__item}>
             <h2 className="title-2">Email</h2>
-            <p>
-              <a href="mailto:ellina.dev@rambler.ru">
-                📬 ellina.dev@rambler.ru
-              </a>
-            </p>
+            <a href="mailto:ellina.dev@rambler.ru">📬 ellina.dev@rambler.ru</a>
           </li>
         </ul>
       </div>
