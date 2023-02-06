@@ -1,11 +1,12 @@
 import React from 'react';
 import { useState, useEffect, useRef } from 'react';
+import detectDarkMode from '../utils/detectDarkMode';
 import { SunIcon } from './svgBtn/SunIcon';
 import { MoonIcon } from './svgBtn/MoonIcon';
 import styles from './BtnDarkMode.module.css';
 
 export const BtnDarkMode = () => {
-  const [darkMode, setDarkMode] = useState('light');
+  const [darkMode, setDarkMode] = useState(detectDarkMode);
   const btnRef = useRef(null);
 
   useEffect(() => {
