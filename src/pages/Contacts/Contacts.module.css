@@ -9,7 +9,7 @@
 }
 
 .list a {
-  color: var(--accent);
+  color: var(--text-color);
 }
 
 .list__item {

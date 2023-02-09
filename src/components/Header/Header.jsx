@@ -15,8 +15,11 @@ export const Header = () => {
         <div className={styles.text}>
           <p>with passion for learning and creating</p>
         </div>
-        <a href="#!" className="btn">
-          Download CV
+        <a
+          href="https://www.linkedin.com/in/ellina-legostaeva-395070260"
+          className="btn"
+        >
+          View CV
         </a>
       </div>
     </header>
