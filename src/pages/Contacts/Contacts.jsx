@@ -18,7 +18,9 @@ export const Contacts = () => {
           </li>
           <li className={styles.list__item}>
             <h2 className="title-2">Email</h2>
-            <a href="mailto:ellina.dev@rambler.ru">📬 ellina.dev@rambler.ru</a>
+            <a href="mailto:dev.ellipse788@aleeas.com">
+              📬 dev.ellipse788@aleeas.com
+            </a>
           </li>
         </ul>
       </div>
