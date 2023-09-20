@@ -21,11 +21,11 @@ const projects = [
     githubLink: 'https://github.com/ellinacv/veterinary-clinic-html',
   },
   {
-    title: 'Parallax',
-    skills: 'HTML, CSS, JS',
+    title: 'Loft House',
+    skills: 'HTML, SCSS Modules, React',
     img: project03,
     imgBig: Project03,
-    githubLink: 'https://github.com/ellinacv/js-features',
+    githubLink: 'https://ellinacv.github.io/loft-house',
   },
 ];
 
