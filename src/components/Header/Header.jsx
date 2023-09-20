@@ -10,7 +10,7 @@ export const Header = () => {
             Hi, I'm <em>Ellina</em>
           </strong>
           <br />
-          Jr. frontend developer
+          Frontend developer
         </h1>
         <div className={styles.text}>
           <p>with passion for learning and creating</p>

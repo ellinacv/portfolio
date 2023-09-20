@@ -7,10 +7,18 @@
   align-items: center;
 
   background-color: var(--header-bg);
-  background-image: url('../../img/header-bg.jpg');
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center center;
+  /* background-image: url('../../img/header-bg.jpg');
+  background-repeat: no-repeat; */
+  /* background-size: auto; */
+  /* background-position: center center; */
+
+  background: linear-gradient(
+      180deg,
+      rgba(56, 56, 58, 0.9) 0%,
+      rgba(36, 43, 51, 0.2) 52.08%,
+      rgba(56, 56, 58, 0.6) 97.92%
+    ),
+    url('../../img/header-bg.jpg') 50% 50% / cover no-repeat;
 
   color: var(--header-text);
   text-align: center;
