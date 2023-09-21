@@ -12,8 +12,10 @@ export const Header = () => {
           <br />
           Frontend developer
         </h1>
-        <div className={styles.text}>
-          <p>with passion for learning and creating</p>
+        <div className={`${styles.text}`}>
+          <p className={`${styles.text__descr} animated`}>
+            with passion for learning and creating
+          </p>
         </div>
         <a
           href="https://www.linkedin.com/in/ellina-legostaeva-395070260"

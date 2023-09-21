@@ -47,9 +47,21 @@
 }
 
 .text {
+  position: relative;
+
   margin-bottom: 40px;
   font-size: 18px;
   line-height: 1.333;
+}
+
+.text__descr {
+  margin: 0 auto;
+  width: 37ch;
+
+  border-right: 4px solid var(--dark-grey);
+  font-family: monospace;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .header__text p + p {
